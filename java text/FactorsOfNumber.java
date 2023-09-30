@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class FactorsOfNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        System.out.print("Factors of " + number + " (other than 1 and itself): ");
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+
+        scanner.close();
+    }
+}
+	

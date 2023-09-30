@@ -1,0 +1,76 @@
+-if stmt
+	-if-else stmt
+	-if-else stmt (If-else ladder)
+	-if-else stmt (If-else nesting)
+	-switch stmt
+
+case 1:
+
+if [ expression ] then
+	stmt
+fi
+
+
+
+
+
+
+
+-----------------------
+case 2:
+
+if [ expression ] then
+	stmt
+else
+	stmt
+fi
+
+-----------------------
+case 3:
+
+if [ $((sum=$a+$b)) > ] then
+	stmt
+elif [ expression 2 ] then
+	stmt
+elif [ expression 3 ] then
+	stmt
+	....
+	....
+else
+	stmt
+fi
+
+-----------------------
+case 4:
+
+if [ expression ] then
+	stmt
+else
+	if [ expression ] then
+		if [ expression ] then
+			stmt
+		else
+			stmt
+		fi
+	else
+		stmt
+	fi
+fi
+
+-----------------------
+case 5:
+(Switch (case)
+{
+	case 2:
+	
+}
+
+case in
+	p1) stm1;;
+	p2) stm1;;
+	p3) stm1;;
+	p4) stm1;;
+	p5) stm1;;
+	*)  stm1;;//* is for default
+
+esac
